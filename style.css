@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    background: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 24rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 7px 12px rgba(0,0,0,0.1);
+    margin: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.main_content h2 {
+    font-weight: 900;
+    margin: 2rem 0 1rem;
+    color:  hsl(223, 47%, 23%);
+}
+.txt{
+    color: hsl(224, 23%, 55%);
+    margin: 0 1rem;
+}
+
+.annual {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.annual_left {
+    display: flex;   
+    gap: 1rem; 
+    padding-left: 0.75rem;
+}
+
+.annual a:hover {
+    text-decoration: none;
+    opacity: .6;
+}
+
+h5 {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.annual_left p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+
+}
+a {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.btn-1 {
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    margin: 1.5rem auto 1rem;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 0.85rem;
+    border-radius: 0.6rem;
+    border: none;
+    font-weight: 700;
+    opacity: 0.9;
+    box-shadow: 2px 6px 12px rgba(0,0,0,0.4);
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+.btn-1:hover {
+    opacity: 0.6;
+}
+.btn-2 {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+    .container {
+        max-width: 85%;
+        margin: auto;
+    }
+    .annual {
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 3%;
+        box-sizing: border-box
+        margin: ;
+        
+    }
+    .annual_left {
+        gap: 0.5rem;
+
+    }
+    .txt {
+        padding: 0.75rem;
+    }
+    .annual_left p {
+        font-size: smaller;
+    }
+    h5 {
+        font-weight: 900;
+    }
+    .btn-1 {
+        font-size: 0.9rem;
+    }
+    .btn-2 {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+}
